@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="container">
+        <h1>Welcome CASH COUNTER</h1>
+        <label for="bill-amt">Enter Your Bill</label><br>
+        <input id="bill-amt" type="text" /><br>
+        <label for="cash-paid">Amount Paid</label><br>
+        <input id="cash-paid" type="text" /><br>
+        <button id="btn">Calculate Change</button><br>
+        <textarea class="optext"></textarea>
+        <h1></h1>
+        <hr>
+        <table class="center" style="border: 1rem;border-color:black;border: width 2rem;">
+            <tr>
+                <th>Cash return count</th>
+                <td id="one"></td>
+                <td id="five"></td>
+                <td id="ten"></td>
+                <td id="tw"></td>
+                <td id="hun"></td>
+                <td id="fh"></td>
+                <td id="tth"></td>
+            </tr>
+            <tr>
+                <th>Available Notes</th>
+                <td>1</td>
+                <td>5</td>
+                <td>10</td>
+                <td>20</td>
+                <td>100</td>
+                <td>500</td>
+                <td>2000</td>
+            </tr>
+
+        </table>
+    </div>
+</body>
+<script src="app.js"></script>
+
+</html>
