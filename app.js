@@ -26,29 +26,31 @@ function handler() {
     var val = parseInt(cash.value) - parseInt(billAmt.value)
     outputtext.innerText = "you will get " + val;
 
-    while (val != 0) {
+    while (val > 0) {
         if (val >= 2000) {
             val = val - 2000;
             tthcnt += 1;
+            console.log(val)
         }
-        else if (val >= 500 && val < 2000) {
+        else if (val >= 500) {
             val = val - 500;
             fhcnt += 1;
+            console.log(val)
         }
-        else if (val >= 100 && val < 500) {
+        else if (val >= 100) {
             val = val - 100;
             hcnt += 1;
         }
-        else if (val >= 20 && val < 100) {
+        else if (val >= 20) {
             val = val - 20;
             twcnt += 1;
         }
-        else if (val >= 10 && val < 20) {
+        else if (val >= 10) {
             val = val - 10;
             tcnt += 1;
         }
 
-        else if (val >= 5 && val < 5) {
+        else if (val >= 5) {
             val = val - 5;
             fcnt += 1;
         }
@@ -58,11 +60,11 @@ function handler() {
         }
 
     }
-    console.log(tcnt)
-    console.log(twcnt)
-    console.log(hcnt)
-    console.log(fhcnt)
-    console.log(tthcnt)
+    // console.log(tcnt)
+    // console.log(twcnt)
+    // console.log(hcnt)
+    // console.log(fhcnt)
+    // console.log(tthcnt)
     one.innerText = ocnt;
     five.innerText = fcnt;
     h.innerText = hcnt;
